@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ZigBee Device Factory">
+   <implementation class="org.fiware.jemma.zigbee.pa.ZigBeeDeviceFactory"/>
+   <reference bind="setZigBeeDevice" cardinality="0..n" interface="org.energy_home.jemma.ah.zigbee.ZigBeeDevice" name="ZigBeeDevice" policy="dynamic" unbind="unsetZigBeeDevice"/>
+</scr:component>
